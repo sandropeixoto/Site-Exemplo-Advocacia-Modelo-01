@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cinzel', serif;
+  --font-sans: 'Inter', sans-serif;
+  
+  --color-brand-blue: #011627;
+  --color-brand-blue-light: #0a2540;
+  --color-brand-blue-dark: #000b14;
+  --color-brand-gold: #D4AF37;
+  --color-brand-gold-hover: #BFA032;
+  --color-brand-gold-pale: #F4E8C2;
+  --color-brand-charcoal: #1c2321;
+  --color-slate-bg: #F4F6F8;
+  --color-paragraph: #4A5568;
+}
+
+/* Base resets & smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+.font-serif-clean {
+  font-family: var(--font-serif);
+}
+
+/* Custom shadow effects for luxury atmosphere */
+.shadow-lux {
+  box-shadow: 0 4px 30px rgba(1, 22, 39, 0.08);
+}
+
+.shadow-gold-glow {
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.15);
+}
+
+/* Custom divider styled for law firm */
+.legal-divider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.legal-divider::before,
+.legal-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to var(--gradient-dir, right), transparent, rgba(212, 175, 55, 0.4), transparent);
+}
+
